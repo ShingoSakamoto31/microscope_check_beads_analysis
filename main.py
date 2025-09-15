@@ -48,7 +48,7 @@ def beads_analysis(df: pd.DataFrame, disc: str):
     qc_fig_signal_count.bar(x, y_count, color="blue")
     qc_fig_signal_count.set_xlabel("Slice", fontsize=12)
     qc_fig_signal_count.set_ylabel("number of beads", fontsize=12)
-    qc_fig_signal_count.set_ylim(0, 1300)
+    # qc_fig_signal_count.set_ylim(0, 1300)
     qc_fig_signal_count.tick_params(labelsize=12)
     qc_fig_signal_count.set_title(
         f"Count = {count}, CV = {count_cv_field}%", fontsize=12
@@ -78,7 +78,7 @@ def beads_analysis(df: pd.DataFrame, disc: str):
     qc_fig_signal_intensity.bar(x, y_intensity, color="blue")
     qc_fig_signal_intensity.set_xlabel("Slice", fontsize=12)
     qc_fig_signal_intensity.set_ylabel("FI of beads", fontsize=12)
-    qc_fig_signal_intensity.set_ylim(0, 1600000)
+    # qc_fig_signal_intensity.set_ylim(0, 1600000)
     qc_fig_signal_intensity.tick_params(labelsize=12)
     qc_fig_signal_intensity.set_title(
         f"FI = {intensity}, CV = {intensity_cv_field}", fontsize=12
